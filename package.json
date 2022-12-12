@@ -2,7 +2,7 @@
   "name": "pokedexapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://LuisBarrial.github.io/PokeApiReact",
+  "homepage": "http://LuisBarrial.github.io/ReactPokeApi",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
