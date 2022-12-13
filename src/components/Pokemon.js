@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import FavoriteContext from "../context/favoriteContexts";
 
 
@@ -21,10 +22,12 @@ const Pokemon = (props) => {
     return (
         <div className="pokemon-card">
             <div className="pokemon-img-container">
+                <Link to={'/index/'+pokemon.name}>
                 <img className="pokemon-img" 
                 src={pokemon.sprites.front_default}
                 alt={pokemon.name}
                 />
+                </Link>
             </div>
             <div className="card-body">
                 <div className="card-top">
@@ -36,7 +39,7 @@ const Pokemon = (props) => {
                 <div className="card-bottom">
                     <div className="pokemon-type">  
                         {pokemon.types.map((type,idx)=>{
-                        let className=(idx%2==0)? "pokemon-type-text Bug": "pokemon-type-text Water";
+                        let className=(idx%2===0)? "pokemon-type-text Bug": "pokemon-type-text Water";
                           return <div key={idx} className={className}> {type.type.name} </div>
                             
                         })}
