@@ -12,7 +12,7 @@ import Aboutjs from "./About";
      <BrowserRouter>
      <main>
      <Routes>
-             <Route exact path="/index" element={<Indexs/>} />
+             <Route exact path="/" element={<Indexs/>} />
              <Route exact path="/index/:pokename" element={<Aboutjs/>} />
              
      </Routes>
