@@ -12,7 +12,7 @@ let imgUrl=
     return <nav>
         <div>
             <div>
-                <a href="/">
+                <a href="/ReactPokeApi">
                 <img src={imgUrl} 
                 alt="pokeapi-logo"
                 className="navbar-img"

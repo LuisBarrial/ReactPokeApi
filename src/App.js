@@ -12,9 +12,8 @@ import Aboutjs from "./About";
      <BrowserRouter>
      <main>
      <Routes>
-             <Route exact path="/" element={<Indexs/>} />
-             <Route exact path="/index/:pokename" element={<Aboutjs/>} />
-             
+             <Route exact path="/ReactPokeApi" element={<Indexs/>} />
+             <Route exact path="/ReactPokeApi/:pokename" element={<Aboutjs/>} />   
      </Routes>
      </main>
      </BrowserRouter>

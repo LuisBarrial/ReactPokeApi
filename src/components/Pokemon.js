@@ -22,7 +22,7 @@ const Pokemon = (props) => {
     return (
         <div className="pokemon-card">
             <div className="pokemon-img-container">
-                <Link to={'/index/'+pokemon.name}>
+                <Link to={'/ReactPokeApi/'+pokemon.name}>
                 <img className="pokemon-img" 
                 src={pokemon.sprites.front_default}
                 alt={pokemon.name}
